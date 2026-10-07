@@ -58,10 +58,3 @@ def scrape_goodreads_reviews(book_url, output_file="goodreads_reviews.csv"):
         print("❌ No reviews could be parsed.")
         print("Reason: The text is likely hidden behind client-side JavaScript.")
 # End of function
-
-
-# Test
-if __name__ == "__main__":
-    # URL targeting the main edition entry for Ivo Andrić's Prokleta Avlija
-    target_url = "https://www.goodreads.com/book/show/11553583-prokleta-avlija"
-    scrape_goodreads_reviews(target_url)
